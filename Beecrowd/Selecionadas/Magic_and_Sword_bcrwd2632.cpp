@@ -35,7 +35,7 @@ int main(){
 		std::cin>>w>>h>>x1>>y1;
 		x2=(x1+w), y2=y1;		//O Vértice 2 é o esquerdo inferior
 		x3=x1, y3=(y1+h);		//O Vértice 3 é o esquerdo superior
-		x4=(x1+w), y4=(y1+h);	//O Vértice 4 é o direito superior
+		x4=(x1+w), y4=(y1+h);		//O Vértice 4 é o direito superior
 		
 	
 		std::string S;
