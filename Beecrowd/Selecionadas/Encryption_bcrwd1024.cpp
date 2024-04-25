@@ -20,9 +20,8 @@ int main(){
 	for(i=0; i<N; i++){
 		scanf(" %[^\n]", S);
 		tam=strlen(S);
-		for(j=tam; j>0; j--){
+		for(j=tam; j>0; j--)
 			printf("%c", (!eh_letra(S[j-1])? (j<=ceil(tam/2)? S[j-1]-1 : S[j-1]) : (j<=ceil(tam/2)? S[j-1]+2 : S[j-1]+3)));
-		}
 		putchar('\n');
 	}	
 	
@@ -30,6 +29,9 @@ int main(){
 }
 
 bool eh_letra (char x){
-	if((x>='A' && x<='Z')||(x>='a' && x<='z')) return true;
+	
+	if((x>='A' && x<='Z')||(x>='a' && x<='z')) 
+		return true;
+	
 	return false;
 }
