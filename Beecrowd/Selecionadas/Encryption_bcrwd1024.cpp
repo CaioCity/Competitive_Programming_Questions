@@ -6,7 +6,7 @@
 #include <stdbool.h>
 #include <math.h>
 
-bool eh_letra (char);
+bool eh_letra (char); //Caso o caractere seja uma letra maiúscula, realiza a conversão para minúscula (e vice-versa)
 
 int main(){
 	
