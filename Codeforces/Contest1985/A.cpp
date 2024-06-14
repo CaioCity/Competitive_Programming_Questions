@@ -4,8 +4,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void build_crivo(int max, int* crivo);
-
 int main(){
 
     short int N;
