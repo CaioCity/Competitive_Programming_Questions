@@ -1,3 +1,6 @@
+// https://atcoder.jp/contests/abc358/tasks/abc358_c
+// Popcorn
+
 #include <bits/stdc++.h>
 
 int backtracking(int index, int N, int M, bool subset[], std::vector<std::string>& grid);
