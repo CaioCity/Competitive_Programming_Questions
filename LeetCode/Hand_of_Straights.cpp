@@ -1,0 +1,30 @@
+// https://leetcode.com/problems/hand-of-straights/
+// Hand of Straights
+
+class Solution {
+public:
+    bool isNStraightHand(vector<int>& hand, int K) {
+        map<int,int> numbers;
+        for(int i :hand)
+            numbers[i]++;
+        
+        map<int,int>::iterator fim=numbers.end();
+        for(int i=1; i<K; i++)
+            fim--;
+        for(auto i=numbers.begin(); i!=fim; i++)
+            while(i->second--!=0)
+                for(int j=1; j<K; j++){
+                    if(numbers[i->first+j]>0)
+                        numbers[i->first+j]--;
+                    else
+                        return 0;
+                }
+        
+        fim=numbers.end()--;
+        for(int i=0; i<K; i++, fim--)
+            if(fim->second!=0)
+                return false;
+        
+        return 1;
+    }
+};
