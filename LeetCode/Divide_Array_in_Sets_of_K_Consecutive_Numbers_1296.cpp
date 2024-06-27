@@ -1,5 +1,5 @@
 // https://leetcode.com/problems/divide-array-in-sets-of-k-consecutive-numbers/description/
-// Divide Array in Sets of K Consecutive Numbers
+// 1296 - Divide Array in Sets of K Consecutive Numbers
 
 class Solution {
 public:
