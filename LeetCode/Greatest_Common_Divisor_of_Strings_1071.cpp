@@ -1,5 +1,5 @@
 // https://leetcode.com/problems/greatest-common-divisor-of-strings/description
-// Greatest Common Divisor of Strings
+// 1071 - Greatest Common Divisor of Strings
 
 class Solution {
 public:
