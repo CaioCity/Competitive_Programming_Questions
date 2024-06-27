@@ -1,5 +1,5 @@
 // https://leetcode.com/problems/most-profit-assigning-work/description/
-// Most Profit Assigning Work
+// 826 - Most Profit Assigning Work
 
 class Solution {
 public:
