@@ -1,5 +1,5 @@
 // https://leetcode.com/problems/increasing-triplet-subsequence/description
-// Increasing Triplet Subsequence
+// 334 - Increasing Triplet Subsequence
 
 class Solution {
 public:
