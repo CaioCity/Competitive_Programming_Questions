@@ -1,5 +1,5 @@
 // https://leetcode.com/problems/ipo/
-// IPO
+// 502 - IPO
 
 class Solution {
 public:
