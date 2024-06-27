@@ -1,5 +1,5 @@
 // https://leetcode.com/problems/minimum-operations-to-make-binary-array-elements-equal-to-one-i/
-// Minimum Operations to Make Binary Array Elements Equal to One I
+// 3191 - Minimum Operations to Make Binary Array Elements Equal to One I
 
 class Solution {
 public:
