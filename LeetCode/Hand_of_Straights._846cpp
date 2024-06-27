@@ -1,5 +1,5 @@
 // https://leetcode.com/problems/hand-of-straights/
-// Hand of Straights
+// 846 - Hand of Straights
 
 class Solution {
 public:
