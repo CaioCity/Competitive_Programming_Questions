@@ -1,5 +1,5 @@
 // https://leetcode.com/problems/minimum-average-of-smallest-and-largest-elements/description/
-// Minimum Average of Smallest and Largest Elements
+// 3194 - Minimum Average of Smallest and Largest Elements
 
 class Solution {
 public:
