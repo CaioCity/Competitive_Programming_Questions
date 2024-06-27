@@ -1,5 +1,5 @@
 // https://leetcode.com/problems/max-area-of-island/description/
-// Max Area of Island
+// 695 - Max Area of Island
 
 class Solution {
 public:
