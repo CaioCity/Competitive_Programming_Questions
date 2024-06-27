@@ -1,5 +1,5 @@
 // https://leetcode.com/problems/reverse-prefix-of-word/description/
-// Reverse Prefix of Word
+// 2000 - Reverse Prefix of Word
 
 char* reversePrefix(char* word, char ch) {
     short int tam=strlen(word),i;
