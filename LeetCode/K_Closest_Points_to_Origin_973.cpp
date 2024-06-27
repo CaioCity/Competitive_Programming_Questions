@@ -1,5 +1,5 @@
 // https://leetcode.com/problems/k-closest-points-to-origin/
-// K Closest Points to Origin
+// 973 - K Closest Points to Origin
 
 int comparar(pair<int,int>& a, pair<int,int>& b){
     return (a.first*a.first + a.second*a.second) < (b.first*b.first + b.second*b.second);
