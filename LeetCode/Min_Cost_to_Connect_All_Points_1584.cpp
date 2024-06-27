@@ -1,5 +1,5 @@
 // https://leetcode.com/problems/min-cost-to-connect-all-points/
-// Min Cost to Connect All Points
+// 1584 - Min Cost to Connect All Points
 
 // Questão sobre o algoritmo de Kruskal. Ainda desconhecia union find
 
