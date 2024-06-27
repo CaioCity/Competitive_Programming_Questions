@@ -1,5 +1,5 @@
 // https://leetcode.com/problems/maximum-average-subarray-i/description
-// Maximum Average Subarray I
+// 643 - Maximum Average Subarray I
 
 class Solution {
 public:
