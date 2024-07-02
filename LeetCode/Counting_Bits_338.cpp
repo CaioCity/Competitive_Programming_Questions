@@ -6,7 +6,6 @@
 class Solution {
 public:
     vector<int> countBits(int n) {
-        map<int,int> back;
         vector<int> ans(n+1,0);
         int pot2 = 1, aux, count;
         ans[0]=0;
