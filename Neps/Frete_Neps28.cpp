@@ -5,51 +5,45 @@
 
 #define int int64_t
 
-typedef std::tuple<int,int,int> trio;
-
 int32_t main() {
 
     std::ios::sync_with_stdio(0), std::cin.tie(0), std::cout.tie(0);
 
-    int N,M,A,B,C;
+    int N,M,U,V,C;
     std::cin>>N>>M; 
 
     std::vector<std::vector<std::pair<int,int>>> edges (N+1, std::vector<std::pair<int,int>> (0)) ;
 
-    std::priority_queue<trio, std::vector<trio>, std::greater<trio> > heap;
+    std::priority_queue<std::pair<int,int>, std::vector<std::pair<int,int>>, std::greater<std::pair<int,int>> > heap;
 
     for(int i=0; i<M; ++i){
-        std::cin>>A>>B>>C;
-        edges[A].push_back({B,C});
-        edges[B].push_back({A,C});
+        std::cin>>U>>V>>C;
+        edges[U].push_back({V,C});
+        edges[V].push_back({U,C});
     }
 
-    std::vector<int> cost (N+1, INT32_MAX);
+    int* visited = (int*)calloc(N+1,sizeof(int));
 
-    for(auto [T,V] : edges[1])
-        heap.push({V,1,T});
-
-    int ans=INT32_MAX;
+    for(auto [T,cost] : edges[1])
+        heap.push({cost,T});
 
     while(!heap.empty()){
-        std::tie(C,A,B)=heap.top();
+        std::tie(C,V)=heap.top();
         heap.pop();
 
-        if(B==N){
-            ans=std::min(ans,C);
-            continue;
+        if(V==N){
+            std::cout<<C<<"\n";
+            break;
         }
 
-        if(cost[B]<=C || C>ans)
+        if(visited[V])
             continue;
 
-        cost[B]=C;
+        visited[V]=1;
 
-        for(auto [Next,Valor] : edges[B])
-            heap.push({C+Valor,B,Next});
+        for(auto [Next,Valor] : edges[V])
+            heap.push({C+Valor,Next});
     }
-
-    std::cout<<ans<<"\n";
     
     return 0;
 }
