@@ -3,10 +3,6 @@
 
 #include <bits/stdc++.h>
 
-int bs( int inicio, int fim, int N, int target, int V[] );
-
-int64_t coins (int dia, int N, int V[]);
-
 int main() {
 
     std::ios::sync_with_stdio(0), std::cin.tie(0), std::cout.tie(0);
@@ -36,7 +32,6 @@ int main() {
         }
 
         pot>>=1;
-        // std::cout<<"pot = "<<pot<<'\n';
     }
 
     std::cout<<"oitavas\n";
