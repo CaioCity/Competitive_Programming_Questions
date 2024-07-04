@@ -11,6 +11,8 @@
  *     ListNode(int x, ListNode *next) : val(x), next(next) {}
  * };
  */
+
+// Em C++
 class Solution {
 public:
     ListNode* mergeNodes(ListNode* head) {
@@ -33,3 +35,24 @@ public:
         return head;
     }
 };
+
+// Em C
+struct ListNode* mergeNodes(struct ListNode* head) {
+    struct ListNode *p = head, *count = head;
+    int sum;
+    while(p->next!=NULL){
+        p=p->next;
+        sum=0;
+        while(p->val!=0){
+            sum+=(p->val);
+            p=p->next;
+        }
+        count->val = sum;
+        if(p->next!=NULL)
+            count=count->next;
+        else
+            count->next=NULL;
+    }
+
+    return head;
+}
