@@ -2,7 +2,6 @@
 // C - Espelhos
 
 #include <bits/stdc++.h>
-#include <stdio.h>
 
 #define int int64_t
 
