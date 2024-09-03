@@ -1,5 +1,5 @@
 // https://www.geeksforgeeks.org/problems/negative-weight-cycle3504/1
-// Negative weight cycle
+// Negative Weight Cycle
 // Consulta -> https://www.geeksforgeeks.org/detecting-negative-cycle-using-floyd-warshall/
 
 class Solution {
