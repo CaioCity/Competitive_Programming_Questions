@@ -1,0 +1,24 @@
+// https://leetcode.com/problems/count-the-number-of-consistent-strings/description
+// 1684 - Count the Number of Consistent Strings
+
+class Solution {
+public:
+    int countConsistentStrings(string allowed, vector<string>& words) {
+        set<char> S (allowed.begin(),allowed.end());
+        int ans=0;
+        bool next=0;
+
+        for(string& str : words){
+            next=0;
+            for(char& C : str)
+                if(S.find(C)==S.end()){
+                    next=1;
+                    break;
+                }
+            if(next) continue;
+            ++ans;
+        }
+
+        return ans;
+    }
+};
