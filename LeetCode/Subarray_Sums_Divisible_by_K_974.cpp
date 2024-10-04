@@ -8,7 +8,7 @@ public:
         unordered_map<int,int> hashmap;
         for(int i=0; i<N; ++i){
             prefix+=nums[i];
-            mod = prefix<0? (k - std::abs(prefix%k))%k : prefix%k;
+            mod = ((prefix%k) + k)%k;
             if(mod==0)
                 ++ans;
             ans+=hashmap[mod];
